@@ -4,7 +4,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
   }
-  
+
   /* What kind of selector is this? */
   .logo {
     width: 100px;
@@ -38,7 +38,7 @@ body {
     font-size: 20px;
     border-radius: 25px;
     background: rgba(255, 255, 255, .45);
-    padding: 20px;
+    padding: 15px 20px 20px 20px;
     text-align: center;
     border: 2px solid white;
   }
@@ -47,16 +47,16 @@ body {
     border-radius: 25px;
     border: 2px solid teal;
     background: rgba(255, 255, 255, .75);
-    padding: 20px;
+    padding: 15px 20px 20px 20px;
   }
 
   nav {
     display: flex;
     justify-content: flex-end;
-    width: 90
-    %;
+    width: 90%;
     padding-right: 2%;
   }
+
   /* This is an ID selector */
   #profile-pic {
     width: 300px;
