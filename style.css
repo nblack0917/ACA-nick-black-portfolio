@@ -53,6 +53,7 @@ body {
 
   nav > a:hover {
     opacity: .7;
+    cursor: pointer;
   }
 
   .has-border {
@@ -66,6 +67,7 @@ body {
 
   .has-border:hover {
     opacity: .7;
+    cursor: pointer;
   }
 
   nav {
@@ -134,5 +136,6 @@ body {
   }
   button:hover {
     opacity: .8;
+    cursor: pointer;
   }
 
