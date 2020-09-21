@@ -32,7 +32,6 @@ body {
     width: 100%;
     display: grid;
     grid-template-columns: 30% 40% 30%;
-    /* grid-template-rows: repeat(2, 1fr) 4fr 1fr; */
   }
 
   /* This is an element within an element selector */ 
@@ -74,7 +73,6 @@ body {
     display: flex;
     justify-content: flex-end;
     width: 100%;
-    /* padding-right: 2%; */
   }
 
   /* This is an ID selector */
