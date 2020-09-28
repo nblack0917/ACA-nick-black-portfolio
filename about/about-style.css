@@ -152,21 +152,22 @@ article {
 
 .my-work {
   background-image: url("./images/screenprinting.jpg");
-  background-size: 100%;
-  background-position: center;
-  filter: grayscale(80%);
   grid-area: aside1;
   margin-bottom: 10px;
-  display: flex;
-  align-items: center;
 }
 
 .my-past {
+  background-image: url("./images/javascriptblog.jpg");
   margin-top: 10px;
   grid-area: aside2;
 }
 
 .my-work, .my-past{
+  display: flex;
+  align-items: center;
+  background-size: 100%;
+  background-position: center;
+  filter: grayscale(80%);
   width: 100%;
   height: auto;
   background-color: teal;
@@ -204,13 +205,13 @@ article {
     width: 700px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-template-areas: 
-                "header header"
-                "image1 image1"
-                "info info"
-                "aside1 aside2"
-                "contact image2";
+                "header header header header header header"
+                "image1 image1 image1 image1 image1 image1"
+                "info info info info info info"
+                "aside1 aside1 aside1 aside2 aside2 aside2"
+                "contact contact image2 image2 image2 image2";
     margin-bottom: 40px;
   }
 
@@ -225,27 +226,38 @@ article {
     width: 90%;
   }
 
-  .my-work {
+  .my-work, .my-past {
     width: 330px;
     height: 200px;
-    margin-right: 20px;
+  }
+
+  .my-work {
+    /* margin-right: 20px; */
     margin-bottom: 0;
   }
   
   .my-past {
-    width: 330px;
-    margin-left: 20px;
+    width: 100%;
+    /* margin-left: 20px; */
     margin-top: 0;
   }
 
   .contact-info {
     grid-area: contact;
-    width: 310px;
+    width: 230px;
     height: auto;
     background-color: tomato;
     margin-top: 40px;
+
   }
 
+  .lower-img {
+    grid-area: image2;
+    margin-top: 40px;
+    width: 430px;
+    margin-left: 40px;
+ 
+  }
 }
 
 @media (max-width: 876px) {
@@ -286,7 +298,7 @@ article {
   .my-work {
     width: 100%;
     margin-right: 0px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
   
   .my-past {
@@ -302,6 +314,13 @@ article {
     background-color: tomato;
     margin-top: 40px;
   }
-  
+
+  .lower-img {
+    grid-area: image2;
+    margin-top: 40px;
+    width: 100%;
+    margin-left: 0;
+ 
+  }
 
 }
