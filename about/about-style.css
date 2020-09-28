@@ -3,7 +3,34 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(186, 205, 218);
     margin: 0;
-  }
+}
+
+h1 {
+  color: darkcyan;
+  margin: 0 auto;
+  border-bottom: 2px solid teal;
+  padding: 20px 0;
+}
+
+h2 {
+  margin: 0 auto;
+  font-style: italic;
+  color: black;
+  background-color: white;
+  text-decoration: underline;
+  padding: 10px 20px;
+  opacity: .;
+}
+
+p {
+  margin: 0 auto;
+  font-style: italic;
+  color: darkcyan;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 18pt;
+  font-weight: 600;
+}
 
 .logo {
   width: 100px;
@@ -100,20 +127,6 @@ main div:first-child {
   justify-content: center;
 }
 
-h1 {
-  color: darkcyan;
-  margin: 0 auto;
-  border-bottom: 2px solid teal;
-  padding: 20px 0;
-}
-
-h2 {
-  margin: 0 auto;
-  font-style: italic;
-  color: darkcyan;
-  padding: 20px 0;
-}
-
 /* under image */
 
 .about-block {
@@ -126,15 +139,26 @@ h2 {
   background-color: ghostwhite;
 }
 
+/* below image */
+
 article {
   width: 500px;
   color: darkcyan;
   line-height: 1.5em;
 }
 
+
+/* aside boxes */
+
 .my-work {
+  background-image: url("./images/screenprinting.jpg");
+  background-size: 100%;
+  background-position: center;
+  filter: grayscale(80%);
   grid-area: aside1;
   margin-bottom: 10px;
+  display: flex;
+  align-items: center;
 }
 
 .my-past {
@@ -147,6 +171,8 @@ article {
   height: auto;
   background-color: teal;
 }
+
+/* bottom area */
 
 .contact-info {
   grid-area: contact;
@@ -170,9 +196,12 @@ article {
 }
 
 @media (max-width: 1276px) {
+  h2 {
+    font-size: 16pt;
+  }
   main {
     height: auto;
-    width: 800px;
+    width: 700px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -197,15 +226,24 @@ article {
   }
 
   .my-work {
-    width: 380px;
+    width: 330px;
+    height: 200px;
     margin-right: 20px;
     margin-bottom: 0;
   }
   
   .my-past {
-    width: 380px;
+    width: 330px;
     margin-left: 20px;
     margin-top: 0;
+  }
+
+  .contact-info {
+    grid-area: contact;
+    width: 310px;
+    height: auto;
+    background-color: tomato;
+    margin-top: 40px;
   }
 
 }
@@ -217,7 +255,7 @@ article {
 
   main {
     height: auto;
-    width: 500px;
+    width: 350px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
@@ -227,8 +265,8 @@ article {
                 "info"
                 "aside1" 
                 "aside2"
-                "image2"
                 "contact"
+                "image2"
                 ;
     margin-bottom: 40px;
   }
