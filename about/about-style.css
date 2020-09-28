@@ -162,11 +162,108 @@ article {
   width: 100%
 }
 
-
-
 .small-text {
   grid-column: 2/3;
   color: white;
   font-size: 10px;
   margin: 3% auto;
+}
+
+@media (max-width: 1276px) {
+  main {
+    height: auto;
+    width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+                "header header"
+                "image1 image1"
+                "info info"
+                "aside1 aside2"
+                "contact image2";
+    margin-bottom: 40px;
+  }
+
+  .about-block {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 40px;
+  }
+
+  article {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .my-work {
+    width: 380px;
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+  
+  .my-past {
+    width: 380px;
+    margin-left: 20px;
+    margin-top: 0;
+  }
+
+}
+
+@media (max-width: 876px) {
+  h2 {
+    font-size: 14pt;
+  }
+
+  main {
+    height: auto;
+    width: 500px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+                "header"
+                "image1"
+                "info"
+                "aside1" 
+                "aside2"
+                "image2"
+                "contact"
+                ;
+    margin-bottom: 40px;
+  }
+
+  .about-block {
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+  }
+
+  article {
+    margin: 0 auto;
+    width: 80%;
+    padding: 40px 0;
+  }
+
+  .my-work {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+  
+  .my-past {
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+
+  .contact-info {
+    grid-area: contact;
+    width: 100%;
+    height: auto;
+    background-color: tomato;
+    margin-top: 40px;
+  }
+  
+
 }
