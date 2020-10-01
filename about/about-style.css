@@ -19,7 +19,6 @@ h2 {
   background-color: white;
   text-decoration: underline;
   padding: 10px 20px;
-  opacity: .;
 }
 
 p {
@@ -189,6 +188,9 @@ article {
   background-repeat: no-repeat;
   opacity: .8;
   margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-info:hover {
