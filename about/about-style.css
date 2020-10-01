@@ -338,7 +338,7 @@ article {
   .contact-info {
     grid-area: contact;
     width: 100%;
-    height: auto;
+    height: 300px;
     margin-top: 40px;
   }
 
