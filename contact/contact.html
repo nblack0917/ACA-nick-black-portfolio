@@ -38,7 +38,7 @@
       </div>
      
       
-      <form action="results.html" method="get"></form>
+      <form action="results.html" method="get">
         <section class="form-section">
           <div class="form-box-1">
             <div>
@@ -50,17 +50,20 @@
               <input type="email" name="email" id="email" placeholder="E-mail Address" required>
             </div>
             <div>
-              <!-- <label for="comments">Comments or Message</label><br> -->
-              <textarea id="comments" name="comments" placeholder="Type your Comments or Message here" required></textarea>
+              <input type="text" name="phone" id="phone" placeholder="Phone (xxx) xxx - xxxx" required>
             </div>
-            <div class="radio">
+            <div>
+              <!-- <label for="comments">Comments or Message</label><br> -->
+              <textarea id="comments" name="comments" placeholder="Type your Comments or Message here" maxlength="500" minlength="20" required></textarea>
+            </div>
+            <div class="contact-question">
               Do you require a response?
-              <div class="radio-answer">
-                <div>
+              <div class="question">
+                <div class="y-or-n">
                   <label for="yes_contact">Yes</label>
-                  <input type="radio" name="contacted" id="yes_contact" value="yes_contact">
+                  <input type="radio" name="contacted" id="yes_contact" value="yes_contact" required>
                 </div>
-                <div>
+                <div class="y-or-n">
                   <label for="no_contact">No</label>
                   <input type="radio" name="contacted" id="no_contact" value="no_contact">
                 </div>
@@ -68,36 +71,55 @@
             </div>
           </div>
           <div class="form-box-2">
-            <div>
+            <div class="contact-question">
               How did you hear about me?
-              <div>
-                <label for="Classmate">Classmate</label>
-                <input type="checkbox" name="classmate" id="classmate">
+              <div class="question">
+                <div class="check">
+                  <div>
+                    <label for="Classmate">Classmate</label>
+                    <input type="checkbox" name="classmate" id="classmate">
+                  </div>
+                  <div>
+                    <label for="resume">Resume Submission</label>
+                    <input type="checkbox" name="resume" id="resume">
+                  </div>
+                  <div>
+                    <label for="linkedin">LinkedIn</label>
+                    <input type="checkbox" name="linkedin" id="linkedin">
+                  </div>
+                  <div>
+                    <label for="aca">Coding Academy Rec</label>
+                    <input type="checkbox" name="aca" id="aca">
+                  </div>
+                  <div>
+                    <label for="aca">Other</label>
+                    <input type="checkbox" name="other" id="aca">
+                  </div>
+                </div>
               </div>
               <div>
-                <label for="resume">Resume Submission</label>
-                <input type="checkbox" name="resume" id="resume">
-              </div>
-              <div>
-                <label for="linkedin">LinkedIn</label>
-                <input type="checkbox" name="linkedin" id="linkedin">
-              </div>
-              <div>
-                <label for="aca">Coding Academy Rec</label>
-                <input type="checkbox" name="aca" id="aca">
+                <!-- <label for="comments">Comments or Message</label><br> -->
+                <textarea id="other_ans" name="other_ans" placeholder="If other..." maxlength="50" required></textarea>
               </div>
             </div>
-            <div>
-                <div>
-                  <label for="yes_birthday">Would you like a message on your birthday?</label>
-                  <input type="checkbox" name="yes_birthday" id="yes_birthday">
-                </div>
-                <div>
-                  <label for="date">Birthdate</label>
-                  <input type="date" name="date" id="date" min="1930-01-01" max="2040-12-31">
+              <div class="contact-question">
+                Would you like a special message on your birthday?
+                <div class="question">
+                  <div>
+                    <label for="yes_birthday">Yes!</label>
+                    <input type="checkbox" name="yes_birthday" id="yes_birthday">
+                  </div>
+                  <div class="birthday">
+                    <label for="date">Birthdate</label>
+                    <input type="date" name="date" id="date" min="1930-01-01" max="2040-12-31">
+                  </div>
                 </div>
               </div>
           </div>
+        </section>
+        <section class="submit-box">
+          <input type="submit" value="Submit">
+          <input type="reset">
         </section>
       </form>
     </main>
