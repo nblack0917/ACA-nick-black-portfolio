@@ -166,7 +166,7 @@ article {
   grid-area: aside2;
 }
 
-.my-work, .my-past, .lower-img{
+.my-work, .my-past, .lower-img, .contact-info{
   display: flex;
   align-items: center;
   background-size: 100%;
@@ -183,8 +183,17 @@ article {
   grid-area: contact;
   width: 350px;
   height: auto;
-  background-color: tomato;
+  background-image: url("./images/contact_me.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: .8;
   margin-top: 40px;
+}
+
+.contact-info:hover {
+  opacity: 1;
+  cursor: pointer;
 }
 
 .lower-img {
@@ -260,7 +269,7 @@ article {
     grid-area: contact;
     width: 230px;
     height: auto;
-    background-color: tomato;
+    /* background-color: tomato; */
     margin-top: 40px;
 
   }
@@ -330,7 +339,6 @@ article {
     grid-area: contact;
     width: 100%;
     height: auto;
-    background-color: tomato;
     margin-top: 40px;
   }
 
