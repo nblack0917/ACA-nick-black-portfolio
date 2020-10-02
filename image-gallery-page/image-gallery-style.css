@@ -66,10 +66,6 @@
     opacity: 1;
 }
 
-#fire-2 {
-    duration: 2s;
-    delay: 5s;
-}
 @media (max-width: 1200px) {
     .container {
         width: 800px;
@@ -169,31 +165,8 @@
         margin-bottom: 0;
     }
 
-    #tent-1, #trail-1 {
+    #tent-1, #trail-1, #fire-1, #space-1, #fire-2, #woods-1, #fire-3, #snow-1, #woods-2, #sun-1, #boat-1, #woods-3 {
         height: auto;
     }
 
-    #fire-1, #space-1 {
-        height: auto;
-    }
-
-    #fire-2, #woods-1 {
-        height: auto;
-    }
-
-    #fire-3 {
-        height: auto;
-    }
-
-    #snow-1, #woods-2 {
-        height: auto;
-    }
-
-    #sun-1, #boat-1 {
-        height: auto;
-    }
-
-    #woods-3 {
-        height: auto;
-    }
 }
