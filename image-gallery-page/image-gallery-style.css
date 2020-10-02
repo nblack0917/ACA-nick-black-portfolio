@@ -21,7 +21,6 @@
 
 .image-item, .image-container {
     height: 100%;
-    width: auto;
 }
 
 .image-container {
@@ -65,35 +64,71 @@
 
 .image-container:hover .overlay {
     opacity: 1;
-  }
+}
 
+#fire-2 {
+    duration: 2s;
+    delay: 5s;
+}
 @media (max-width: 1200px) {
     .container {
         width: 800px;
         height: auto;
         /* background: darkgrey; */
-        grid-template-rows: repeat(3, 400px);
+        grid-template-rows: repeat(3, auto);
     }
     
     .row-container {
         /* background: darkmagenta; */
         flex-wrap: wrap;
+        align-content: space-between;
         height: auto;
-        width: 800px;
+        width: 100%;
     }
     
     .image-item {
-        height: 100%
+        height: 100%;
+
     }
 
     .image-container {
         position: relative;
-        margin: 10px 10px;
-        height: 48%;
+        margin: 0 10px 20px;
+        height: 219px
     }
     .overlay {
         height: 100%;
         }
+
+    #tent-1, #trail-1 {
+        margin-bottom: 0;
+        height: 364px;
+    }
+
+    #fire-1, #space-1 {
+        height: 323px;
+    }
+
+    #fire-2, #woods-1 {
+        height: 359px;
+    }
+
+    #fire-3 {
+        height: 540px;
+        margin-bottom: 0;
+    }
+
+    #snow-1, #woods-2 {
+        height: 365px;
+    }
+
+    #sun-1, #boat-1 {
+        height: 263px;
+    }
+
+    #woods-3 {
+        height: 350px;
+    }
 }
 
 @media (max-width: 700px) {
@@ -132,5 +167,33 @@
     
     .row-end {
         margin-bottom: 0;
+    }
+
+    #tent-1, #trail-1 {
+        height: auto;
+    }
+
+    #fire-1, #space-1 {
+        height: auto;
+    }
+
+    #fire-2, #woods-1 {
+        height: auto;
+    }
+
+    #fire-3 {
+        height: auto;
+    }
+
+    #snow-1, #woods-2 {
+        height: auto;
+    }
+
+    #sun-1, #boat-1 {
+        height: auto;
+    }
+
+    #woods-3 {
+        height: auto;
     }
 }
