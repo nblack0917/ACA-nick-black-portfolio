@@ -1,11 +1,9 @@
 let click = false;
 
-
 const fadeInName = () => {
     const name = document.getElementById("main-name");
     if (!click){ console.log("click")
     name.classList.add("animate__animated", "animate__fadeIn", "animate__slower");
-    // name.classList.add("animate__fadeIn");
     click = true;
     } else {
         name.classList.remove("animate__fadeIn", "animate__slower");
