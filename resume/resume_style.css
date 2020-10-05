@@ -175,6 +175,14 @@ nav > a {
 
 /* contact section */
 
+#phoneNum {
+    visibility: hidden;
+}
+
+#phoneBox:hover {
+    cursor: pointer;
+}
+
 .contact_box {
     grid-area: 3 / 1 / 6 / 2;
     display: flex;
